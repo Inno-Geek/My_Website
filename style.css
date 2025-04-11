@@ -72,6 +72,10 @@ a:hover{
     display: none;
 }
 
+#hamburger-nav{
+    display: none;
+}
+
 .hamburger-menu{
     position: relative;
     display: inline-block;
@@ -149,7 +153,7 @@ a:hover{
 /*SECTION*/
 
 section{
-    padding: 4vh;
+    padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -176,6 +180,14 @@ section{
     margin: auto 0;
 }
 
+.section__pic-container img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
 .section__text {
     align-self: center;
     text-align: center;
@@ -195,8 +207,13 @@ section{
 }
 
 .title {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
+}
+
+.section__text__p2 {
+    font-size: clamp(1rem, 3vw, 1.75rem);
+    margin-bottom: 1rem;
 }
 
 #social-container {
@@ -219,6 +236,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -298,7 +316,7 @@ section{
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(163, 163, 163) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
 }
@@ -365,9 +383,9 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
     width: 90%;
     height: 90%;
+    border-radius: 2rem
 }
 
 .project-title {
