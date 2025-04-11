@@ -8,13 +8,25 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
     }
+
+    .menu-links {
+        display: none;
+    }
+
+    .menu-links.open {
+        display: block;
+    }
+
     #experience,
     .experience-details-container {
         margin-top: 2rem;
@@ -25,24 +37,48 @@
     .arrow {
         display: none;
     }
-    section,
+    section {
+        margin: 0 2rem;
+    }
+
     .section-container {
         height: fit-content;
+        gap: 2rem;
     }
     section {
         margin: 0 5%;
     }
     .section__pic-container {
-        height: 275px;
-        width: 275px;
+        height: 300px;
+        width: 300px;
         margin: 0 auto 2rem;
     }
+
+    .color-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .project-img {
+        width: 50%;
+        height: 350px;
+    }
+
+    .project-content {
+        width: 45%;
+    }
+
     .about-containers {
         margin-top: 0;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+    section {
+        margin: 0 1rem;
+        padding: 2vh;
+    }
+
     #contact,
     footer {
         height: 40vh;
@@ -54,6 +90,10 @@
     article {
         font-size: 1rem;
     }
+
+    .article-container {
+        grid-template-columns: 1fr;
+    }
     footer nav {
         height: fit-content;
         margin-bottom: 2rem;
@@ -61,7 +101,19 @@
     .about-containers, .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .details-container {
+        max-width: 100%;
+    }
+
+    .section-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     .contact-info-container {
         margin: 0;
     }
@@ -69,6 +121,21 @@
     .nav-links li a {
         font-size: 1rem;
     }
+
+    .color-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .project-img {
+        width: 50%;
+        height: 350px;
+    }
+
+    .project-content {
+        width: 45%;
+    }
+    
     .experience-sub-title {
         font-size: 1.25rem;
     }
@@ -81,8 +148,8 @@
         text-align: center;
     }
     .section__pic-container {
-        width: auto;
-        height: 46vw;
+        width: 150px;
+        height: 150px;
         justify-content: center;
     }
     .section__text__P2 {
